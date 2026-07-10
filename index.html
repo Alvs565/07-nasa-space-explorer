@@ -27,6 +27,29 @@
     </div>
   </div>
 
+  <div id="apodModalOverlay" class="modal-overlay">
+    <div class="modal">
+      <button id="apodModalClose" class="modal-close" aria-label="Close">&times;</button>
+      <img id="apodModalImage" class="modal-image" src="" alt="" />
+      <div id="apodModalVideoWrapper" class="modal-video-wrapper">
+        <iframe
+          id="apodModalVideo"
+          src=""
+          title="APOD video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <a id="apodModalVideoLink" class="modal-video-link" href="" target="_blank" rel="noopener noreferrer">
+        Watch on YouTube ↗
+      </a>
+      <h2 id="apodModalTitle"></h2>
+      <p id="apodModalDate" class="modal-date"></p>
+      <p id="apodModalExplanation" class="modal-explanation"></p>
+    </div>
+  </div>
+
   <script src="js/dateRange.js"></script>
   <script src="js/script.js"></script>
 </body>
